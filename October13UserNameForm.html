@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head></head>
+    <title>User Name Password Form</title>
+    <script src="valid4.js"></script>
+    <body style="background-color:#6022d3;">
+    </body>
+    <H1><center>Sign up for the Club's Newsletter</center></H1>
+    <h2><center>October 13, 2022</center></h2>
+    <br>
+    <br>
+    <H2 style=color:blanchedalmond><center>Complete the form below for the monthly newsletter</center></H2>
+    <br>
+    <br>
+    
+       <body>
+        <div id="error"></div>
+       <form id ="form" action="validresults.html" method="GET">
+        <form name='registration' onsubmit="return formValidation();">
+            <div>
+            <label for="name"><center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Name :</label><input type="text" name="Name" id="Name" required></center>
+            <br>
+            <label><center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email :</label><input type="text" name="E-mail" id="E-mail" required></center>
+            <br>
+            <label><center>&nbsp;&nbsp;Username :</label><input type="text" name="Username" id="Username" required></center>
+                <br>
+                    <label><center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Password :</label><input type="password" name="Password" id="Password" required></center>
+                
+                    <br>
+            <h3 style=color:blanchedalmond><center>Password must contain upper and lower characters, one number, and be a minimum of eight characters</center></H3>
+                <br>
+                    <br>
+                    <style>
+                        button {
+                            background-color:blueviolet;
+                            color:antiquewhite;
+                            height: 40px;
+                            width: 80px;
+                            border-radius: 5px;
+                            font-size: 16px;
+                            text-align: center;
+                            vertical-align: center;
+                            padding-left: 10px;
+                            padding-right: 10px;
+                            cursor: pointer;
+
+                            
+                        }
+                    </style>
+                    <center><button type="Reset">Reset</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="Submit">Submit</button></center>
+                
+                </div>
+                </form>
+
+
+
+       </body> 
+
+</html>
+
+
+

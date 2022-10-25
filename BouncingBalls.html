@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Bouncing Balls</title>
+    </head>
+    <body>
+        <main>
+        </main>
+
+<script>
+    // Global variables
+    let myElements = [];
+    const MY_WINDOW_HEIGHT = 500;
+    let boolLTR = true, boolTTB = true;
+
+
+    function createNewBall(startTop, startLeft, color)
+    {
+
+        var mainElement = document.querySelector("main");
+        if(mainElement == null)
+        {
+            alert("Failure!");
+        }
+        var newElement = document.createElement('div');
+
+        mainElement.style.width = MY_WINDOW_HEIGHT + "px";
+        mainElement.style.backgroundColor = "lightgreen";
+        mainElement.style.height = MY_WINDOW_HEIGHT +  "px";
+
+        newElement.style.position = "absolute";
+        newElement.style.top = startTop + "px";
+        newElement.style.left = startLeft + "px";
+        newElement.style.width= "45px";
+        newElement.style.backgroundColor = color;
+        newElement.style.borderRadius = "50%";
+
+        
+
+    }
+</script>
+
+    </body>
+</html>
